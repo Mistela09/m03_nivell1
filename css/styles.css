@@ -1,0 +1,262 @@
+.juntos {
+  width: 98%;
+}
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+nav {
+  display: flex;
+  background-color: brown;
+  width: auto;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.icono {
+  background-color: cyan;
+  width: 10%;
+  padding: 8px;
+  margin-right: 25px;
+}
+
+.nav-menu {
+  background-color: cyan;
+  width: 80%;
+  padding: 8px;
+  margin-right: 25px;
+}
+
+.iconos-social {
+  background-color: cyan;
+  width: 10%;
+  padding: 8px;
+}
+
+.container-naranja {
+  display: flex;
+  background-color: cornflowerblue;
+  width: auto;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.barra-naranja {
+  background-color: orange;
+  padding: 8px;
+  width: 100%;
+}
+
+/* container articles */
+
+.container-articles {
+  background-color: black;
+  display: flex;
+  align-items: stretch;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: purple;
+  width: 71%;
+  margin-top: 15px;
+  margin-block-end: 10px;
+  margin-bottom: 15px;
+}
+
+.article1,
+.article2,
+.article3,
+.article4 {
+  background-color: seashell;
+  padding: 8px;
+  width: 43%;
+  margin: 10px 10px;
+  flex-grow: 1;
+}
+
+.article5 {
+  margin: 10px 8px;
+  padding: 8px;
+  background-color: tan;
+  width: 50%;
+  flex-grow: 1;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #f94c47;
+  width: 26%;
+  margin-block-end: 10px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 1%;
+  align-content: center;
+  margin-bottom: 15px;
+}
+
+.lateral1 {
+  background-color: rgb(228, 220, 228);
+  padding: 8px;
+  width: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.lateral2 {
+  background-color: rgb(212, 209, 212);
+  padding: 8px;
+  width: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  width: auto;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pie {
+  background-color: chocolate;
+  width: 98%;
+}
+
+@media screen and (max-width: 800px) {
+  .container-articles {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+  }
+
+  article {
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    width: 98%;
+  }
+
+  .lateral2 {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: 20px auto auto auto;
+    }
+
+    .icono,
+    .nav-menu,
+    .iconos-social {
+      width: 80%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .icono {
+      margin-top: 10px;
+    }
+
+    .container-naranja {
+      justify-content: center;
+      width: 80%;
+      margin: 20px auto 20px auto;
+    }
+
+    .barra-naranja {
+      width: 80%;
+      margin: 20px 0 20px 0;
+      padding-top: 20px;
+    }
+
+    .container-articles{
+        background-color: violet;
+    }
+
+    article {
+        width: 85%;
+    }
+
+    aside {
+        width: 85%;
+        margin: 0px 0 20px 0;
+    }
+
+    .article1, .article2, .article3, .article4, .article5 {
+        width: 75%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-top: 20px;
+        flex-grow: 0;
+    }
+
+    .article1 {
+        margin-top: 30px;
+    }
+
+    .article5 {
+        margin-bottom: 30px;
+    }
+
+    .lateral1, .lateral2{
+        width: 75%;
+        padding-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .lateral1 {
+        margin-top: 30px;
+    }
+
+    .lateral2 {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        height: auto;
+    }
+    .pie {
+        width: 85%;
+        padding-top: 20px;
+        margin: 20px auto 20px auto;
+    }        
+  }
+}
